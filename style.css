@@ -1,0 +1,123 @@
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+h3{
+  font-family: "Vibur", cursive;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 38px;
+  color:#3F1D38;
+}
+
+p{
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  padding: 0;
+}
+
+.focused {
+    color: rgb(161, 14, 14); 
+    font-weight: bold; 
+}
+
+#screen {
+    position: absolute; 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundsoundSlider {
+    --sliderSize: 30px;
+    --silderColor: white;
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    background-color: #bdc3c7;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+#backgroundsoundSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--silderColor);
+    width: var(--sliderSize, 30px);
+    height: var(--sliderSize, 30px);
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#playPauseButton {
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin-right:10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(-70deg, #4D3C77, #E19898); 
+}
+
+#volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    background-color: #bdc3c7;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #4D3C77;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#remark {
+    position: absolute;
+    bottom: 0;
+    color: #3F1D38;
+    text-align: center; 
+    padding-bottom: 15px; 
+    height: 50px; 
+    width: 100%;
+}
+
+#remark p{
+    margin: 5px;
+}

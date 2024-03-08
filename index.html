@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/addons/p5.sound.min.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Visualization</title>
+</head>
+<body>
+    <div id="screen" class="container" style="display: none;">
+        <h3 style="margin: 10px 0 30px 0">Focus Music Player</h3>
+        <input type="range" id="backgroundsoundSlider" min="0" max="1" step="0.01" value="0.5">
+        <p style="margin: 30px 0 0 0;">Press <span class="focused">any key</span> to start the <span class="focused">background rainy sound</span></p>
+        <p style="margin: 8px 0 30px 0;">Press <span class="focused">PLAY</span> to play <span class="focused">music</span></p>
+        <div id="panel">
+            <div id="playPauseButton">PLAY</div>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+        </div> 
+    </div>
+    <div id="remark" style="display: none;">
+        <p>Background Sound Effect by <a href="https://pixabay.com/users/soundsforyou-4861230/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=114354">Mikhail</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=114354">Pixabay</a></p>
+        <p>Music by <a href="https://freemusicarchive.org/music/Lobo_Loco/contact"></a>Lobo Loco</a> is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License</a></p>
+    </div> 
+    <script type="text/javascript" src="sketch.js"></script>
+</body>
+</html>
